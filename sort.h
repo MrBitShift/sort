@@ -62,15 +62,14 @@ error:
 	return 1;
 }
 
-int char_insertion_sort(char *arr, char **out)
+int char_insertion_sort(char *arr, size_t arr_len, char **out)
 {
 	int i;
 	int b;
 	char current;
-	size_t arr_len = strlen(arr);
 
 	check_err(arr != NULL, "arr can't be null.");
-	check_err(arr_len > 0, "len must be greater than 0.");
+	check_err(arr_len > 0, "arr_len must be greater than 0.");
 	check_err(out != NULL, "out must not be null.");
 
 	*out = calloc(arr_len + 1, sizeof(char)); // + 1 for null
