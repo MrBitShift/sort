@@ -1,2 +1,6 @@
 *.swp
 log.txt
+dbg.h
+Makefile
+test
+test.c
